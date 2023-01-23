@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Sep 19 13:39:20 2022
+# Process ID: 10344
+# Current directory: C:/Users/NextLife/Desktop/fpga_projects/Button_Led_Test/Button_Led_Test.runs/synth_1
+# Command line: vivado.exe -log BUTTON_LED.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BUTTON_LED.tcl
+# Log file: C:/Users/NextLife/Desktop/fpga_projects/Button_Led_Test/Button_Led_Test.runs/synth_1/BUTTON_LED.vds
+# Journal file: C:/Users/NextLife/Desktop/fpga_projects/Button_Led_Test/Button_Led_Test.runs/synth_1\vivado.jou
+# Running On: DESKTOP-5R2NN9R, OS: Windows, CPU Frequency: 3504 MHz, CPU Physical cores: 4, Host memory: 17137 MB
+#-----------------------------------------------------------
+source BUTTON_LED.tcl -notrace

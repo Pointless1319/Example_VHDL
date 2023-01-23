@@ -1,0 +1,573 @@
+
+*** Running vivado
+    with args -log system_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
+
+
+
+****** Vivado v2021.2.1 (64-bit)
+  **** SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+  **** IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source system_xbar_0.tcl -notrace
+Command: synth_design -top system_xbar_0 -part xc7a35ticsg324-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1259.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ip/system_xbar_0/synth/system_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_crossbar' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_si_transactor' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' (3#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [S:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (4#1) [S:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl' (5#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo' (6#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'MUXF7' [S:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:66574]
+INFO: [Synth 8-6155] done synthesizing module 'MUXF7' (7#1) [S:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:66574]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (8#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_issue.debug_r_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4086]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_si_transactor' (9#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (9#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_issue.debug_r_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4086]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized0' (9#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_splitter' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_splitter' (10#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_wdata_router' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo' (11#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_wdata_router' (12#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized0' (12#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized1' (12#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_nto1_mux' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2890]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_nto1_mux' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2890]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl__parameterized0' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized1' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized2' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_wdata_router__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl__parameterized1' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized0' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_wdata_router__parameterized0' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized3' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4192]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4150]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_si_transactor__parameterized3' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_decoder__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_decoder__parameterized0' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_decoder__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_decoder__parameterized1' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized2' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_wdata_mux' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (13#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_wdata_mux' (14#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (15#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (16#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' (17#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized0' (17#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized1' (17#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized2' (17#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized3' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_ndeep_srl__parameterized2' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized3' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_wdata_mux__parameterized0' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized2' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_wdata_mux__parameterized0' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized4' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_srl_fifo__parameterized4' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_wdata_mux__parameterized1' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized3' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:1038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized3' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/fa53/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_wdata_mux__parameterized1' (18#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4561]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' (19#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_arbiter' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (19#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (19#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_arbiter' (20#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[3].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[4].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[5].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_crossbar' (21#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' (22#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (23#1) [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ip/system_xbar_0/synth/system_xbar_0.v:59]
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_25_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_25_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_25_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_25_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_26_si_transactor__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_26_si_transactor__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEL_ONEHOT[1] in module generic_baseblocks_v2_1_0_nto1_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEL_ONEHOT[0] in module generic_baseblocks_v2_1_0_nto1_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_26_si_transactor__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_26_si_transactor__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_26_si_transactor__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_26_si_transactor__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_26_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_26_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_26_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_26_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[5] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[4] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[3] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[2] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[1] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[95] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[94] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[93] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[92] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[91] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[90] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[89] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[88] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[87] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[86] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[85] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[84] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[83] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[82] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[81] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[80] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[79] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[78] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[77] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[76] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[75] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[74] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[73] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[72] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[71] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[70] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[69] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[68] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[67] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[66] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[65] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[64] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[23] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[22] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[21] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[20] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[19] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[18] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[17] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[16] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWSIZE[8] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWSIZE[7] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWSIZE[6] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWBURST[5] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWBURST[4] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLOCK[5] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLOCK[4] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[11] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[10] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[9] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[8] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[8] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[7] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[6] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[11] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[10] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[9] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[8] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWUSER[2] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWVALID[2] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[5] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[4] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[3] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[2] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[383] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[382] in module axi_crossbar_v2_1_26_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1281.566 ; gain = 22.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1281.566 ; gain = 22.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1281.566 ; gain = 22.434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.425 . Memory (MB): peak = 1281.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 414 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.runs/system_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.runs/system_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1290.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 1300.809 ; gain = 9.910
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.runs/system_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_26_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_26_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 9     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 19    
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 19    
++---Registers : 
+	              133 Bit    Registers := 12    
+	               65 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 15    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 66    
++---Muxes : 
+	   2 Input  134 Bit        Muxes := 3     
+	   2 Input  133 Bit        Muxes := 12    
+	   2 Input   48 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 11    
+	   2 Input    5 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 30    
+	   3 Input    4 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 18    
+	   2 Input    2 Bit        Muxes := 41    
+	   2 Input    1 Bit        Muxes := 157   
+	   4 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_26_wdata_router.
+INFO: [Synth 8-3332] Sequential element (wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_26_wdata_router__parameterized0.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1__2.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1__3.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized2.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_24_axic_reg_srl_fifo__parameterized3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1300.809 ; gain = 41.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |    18|
+|2     |LUT2    |   231|
+|3     |LUT3    |  1008|
+|4     |LUT4    |   139|
+|5     |LUT5    |   915|
+|6     |LUT6    |   617|
+|7     |MUXF7   |   399|
+|8     |SRLC32E |    20|
+|9     |FDRE    |  1706|
+|10    |FDSE    |    46|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1302.121 ; gain = 42.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 487 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1302.121 ; gain = 23.746
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 1302.121 ; gain = 42.988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.248 . Memory (MB): peak = 1302.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1317.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 827a8b5a
+INFO: [Common 17-83] Releasing license: Synthesis
+153 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 1317.816 ; gain = 58.684
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.runs/system_xbar_0_synth_1/system_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_xbar_0, cache-ID = 79774de1d22025c9
+INFO: [Coretcl 2-1174] Renamed 72 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NextLife/Desktop/fpga_projects/microblaze_server/microblaze_server.runs/system_xbar_0_synth_1/system_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_xbar_0_utilization_synth.rpt -pb system_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 25 12:47:12 2022...
